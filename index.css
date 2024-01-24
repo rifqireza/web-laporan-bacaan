@@ -4,6 +4,7 @@ body {
 
 .contain-card {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 50px;
 }
@@ -16,6 +17,7 @@ body {
     text-align: center;
     overflow: hidden;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .card img {
@@ -52,3 +54,9 @@ body {
 .btn:hover {
     background-color: #0056b3;
 }
+
+@media only screen and (max-width: 800px) {
+    .contain-card {
+      flex-direction: column;
+    }
+  }
